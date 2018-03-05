@@ -9,21 +9,21 @@ Your job is to create a React application for a new pizza restaurant called Pizz
 
 * - [ ] (10%) All pizzas on the menu contain a link to a detailed page for each pizza, where extra information is provided. (e.g. http://localhost:3500/pizzas/1)
 
-* - [ ] (10%) Implement a site where you can look at different offers for pizza (e.g. http://localhost:3500/offers)
+* - [x] (10%) Implement a site where you can look at different offers for pizza (e.g. http://localhost:3500/offers)
 
 * - [X] (10%) Implement a site where you can look at information on the place PizzeriaUno(e.g. http://localhost:3500/about)
 
 * - [ ] (10%) Implement a site where you can look at all pizzas you have added to the cart. Cart items should be stored either in localStorage or cookie and retrieved when the user comes back. (e.g. http://localhost:3500/cart)
 
-* - [ ] (5%) The navigation bar should contain a logo (you can provide any image you find suitable) and four links
+* - [x] (5%) The navigation bar should contain a logo (you can provide any image you find suitable) and four links
 
-    * - [ ] Menu
+    * - [x] Menu
 
-    * - [ ] Offers
+    * - [x] Offers
 
-    * - [ ] About us
+    * - [x] About us
 
-    * - [ ] Cart
+    * - [x] Cart
 
 * - [ ] (25%) A user needs to go through the following steps when buying a pizza:
     1. - [ ] Selects a pizza/s from menu or select previous order which can be retrieved at(http://localhost:3500/orders/:telephone)

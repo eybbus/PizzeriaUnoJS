@@ -1,9 +1,26 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import Offer from '../Offer/Offer';
+import { getAllOffers } from '../../actions/offerActions'
 
-const Offers = () => {
-    return (
-        <h1>Offers page</h1>
-    );
+class Menu extends React.Component {
+    componentDidMount() {
+        const { getAllOffers } = this.props;
+        getAllOffers();
+    }
+    render() {
+        const { offer } = this.props;
+        return (
+            <div className="offer-container">
+                {offer.map(o => <Offer key={o.id} givenOffer={o} />)}
+            </div>
+        )
+    }
 };
 
-export default Offers;
+const mapStateToProps = ({ offer }) => {
+    return { offer }
+}
+
+export default connect(mapStateToProps, { getAllOffers })(Menu);
+
