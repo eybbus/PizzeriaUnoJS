@@ -5,7 +5,8 @@ module.exports = {
     entry: './src/app.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'bundle.js'
+        filename: 'bundle.js',
+        publicPath: '/'
     },
     module: {
         rules: [
@@ -30,7 +31,7 @@ module.exports = {
     },
     devtool: 'inline-source-map',
     plugins: [new HtmlWebpackPlugin({
-        title: 'ChatRoomJS',
+        title: 'PizzeriaUNO',
         template: './index.html'
     })]
 };

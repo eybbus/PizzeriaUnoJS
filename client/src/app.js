@@ -1,7 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
+import { createStore, applyMiddleware } from 'redux';
+import thunk from 'redux-thunk';
+import reducers from './reducers/reducers';
 //import { PropTypes } from 'prop-types'
 import '../styles/site';
+import Menu from './components/Menu/Menu';
 
 
 class App extends React.Component {
@@ -11,9 +16,9 @@ class App extends React.Component {
 	
     render() {
         return (
-            <div> I am the ass </div>
+            <Menu />
         );
     }
 }
 
-ReactDOM.render(<App />, document.getElementById('app'));
+ReactDOM.render(<Provider store={createStore(reducers, applyMiddleware(thunk))}><App /></Provider>, document.getElementById('app'));
