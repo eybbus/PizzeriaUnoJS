@@ -4,11 +4,13 @@ import { NavLink } from 'react-router-dom';
 import { connect } from 'react-redux';
 import NavigationBarLinkWrapper from '../NavigationBarLinkWrapper/NavigationBarLinkWrapper';
 
+
+
 const NavigationBar = ( ) => {
     return (
         <nav className="navbar">
             <div className="nav-logo">
-                <img src="https://static.giantbomb.com/uploads/original/1/13691/2327134-ryan_dc.png" alt="" />
+                <img src="https://i.imgur.com/SYcno1g.png" alt="" />
             </div>
             <NavigationBarLinkWrapper>
                 <NavLink
