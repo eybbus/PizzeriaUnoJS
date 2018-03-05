@@ -11,7 +11,7 @@ Your job is to create a React application for a new pizza restaurant called Pizz
 
 * - [ ] (10%) Implement a site where you can look at different offers for pizza (e.g. http://localhost:3500/offers)
 
-* - [ ] (10%) Implement a site where you can look at information on the place PizzeriaUno(e.g. http://localhost:3500/about)
+* - [X] (10%) Implement a site where you can look at information on the place PizzeriaUno(e.g. http://localhost:3500/about)
 
 * - [ ] (10%) Implement a site where you can look at all pizzas you have added to the cart. Cart items should be stored either in localStorage or cookie and retrieved when the user comes back. (e.g. http://localhost:3500/cart)
 
