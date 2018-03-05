@@ -52,4 +52,4 @@ A single archive (*.zip, *.rar) containing all your code. **node_modules/** shou
 A **server** is provided and can be downloaded in the **Assignment** section in Canvas. This server
 should provide you with all the functionality you need, but if you want to change it, feel free. If you
 change the server code, include the new server code with your submission and update the
-README.md accordingl
+README.md accordingly.
