@@ -10,6 +10,7 @@ class Menu extends React.Component {
     }
     render() {
         const { pizza } = this.props;
+        
         return (
             <div className="pizza-container">
                 {pizza.map(p => <Pizza key={p.id} pizza={p} />)}

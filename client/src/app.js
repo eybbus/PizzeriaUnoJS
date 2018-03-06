@@ -13,6 +13,8 @@ import Menu from './components/Menu/Menu';
 import About from './components/About/About';
 import Offers from './components/Offers/Offers';
 import Cart from './components/Cart/Cart';
+import PizzaDetails from './components/PizzaDetails/PizzaDetails';
+
 
 
 class App extends React.Component {
@@ -27,6 +29,7 @@ class App extends React.Component {
                     <NavgationBar />
                     <div className="container">
                         <Switch>
+                            <Route path="/pizzas/:pizzaId" component={PizzaDetails}/>
                             <Route path="/pizzas" component={Menu} />
                             <Route path="/about" component={About} />
                             <Route path="/offers" component={Offers} />

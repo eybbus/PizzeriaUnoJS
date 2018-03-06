@@ -10,7 +10,7 @@ const NavigationBar = ( ) => {
     return (
         <nav className="navbar">
             <div className="nav-logo">
-                <img src="https://i.imgur.com/SYcno1g.png" alt="" />
+                <img src="https://i.imgur.com/yavcMYN.png" alt="" />
             </div>
             <NavigationBarLinkWrapper>
                 <NavLink

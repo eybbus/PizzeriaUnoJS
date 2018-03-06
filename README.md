@@ -7,7 +7,7 @@ Your job is to create a React application for a new pizza restaurant called Pizz
 
 * - [X] (10%) Implement a site where you can look at pizzas on the menu (e.g. http://localhost:3500/pizzas)
 
-* - [ ] (10%) All pizzas on the menu contain a link to a detailed page for each pizza, where extra information is provided. (e.g. http://localhost:3500/pizzas/1)
+* - [x] (10%) All pizzas on the menu contain a link to a detailed page for each pizza, where extra information is provided. (e.g. http://localhost:3500/pizzas/1)
 
 * - [x] (10%) Implement a site where you can look at different offers for pizza (e.g. http://localhost:3500/offers)
 
