@@ -40,7 +40,7 @@ Your job is to create a React application for a new pizza restaurant called Pizz
 * - [ ] (5%) All components should be tested 
 * - [ ] (5%) Components which receive props should have PropTypes set 
 * - [ ] (2.5%) All PropTypes should be documented 
-* - [ ] (2.5%) Constants should be used to identify each action processed by the reducers 
+* - [x] (2.5%) Constants should be used to identify each action processed by the reducers 
 * - [ ] (5%) State which many components use should be stored in a Redux store by using actions and reducers
 
 ## Resources

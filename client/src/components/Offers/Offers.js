@@ -12,6 +12,7 @@ class Menu extends React.Component {
         const { offer } = this.props;
         return (
             <div className="offer-container">
+                <h1>Offers</h1>
                 {offer.map(o => <Offer key={o.id} givenOffer={o} />)}
             </div>
         )

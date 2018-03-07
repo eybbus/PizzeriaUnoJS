@@ -1,7 +1,6 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
 import { NavLink } from 'react-router-dom';
-import { connect } from 'react-redux';
 import NavigationBarLinkWrapper from '../NavigationBarLinkWrapper/NavigationBarLinkWrapper';
 
 
@@ -44,4 +43,4 @@ NavigationBar.contextTypes = {
 
 
 // Fix for react-router-dom, known bug with NavLink
-export default connect(({ language }) => { return { language }; }, null, null, { pure: false })(NavigationBar);
+export default NavigationBar;

@@ -10,15 +10,9 @@ class CartList extends React.Component {
         };
     }
     removeItem(id) {
-        console.log('test button pressed');
-        console.log(this.state.list);
-        console.log(id);
-
         var newList = this.state.list;
         newList.splice(id, 1);
-        
         localStorage.setItem('cartItems', JSON.stringify(newList));
-        console.log(newList);
         newList = JSON.parse(localStorage.getItem('cartItems'));
         this.setState({ list: newList });
         
@@ -29,9 +23,11 @@ class CartList extends React.Component {
         const cartItems = list.map((p, index) => 
             <CartItem key={index} index={index} pizza={p} remove={(id) => this.removeItem(id)} />
         );
+        console.log(cartItems);
         return (
             <div className="pizza-container">
-                {cartItems}
+                <h1>Your Cart</h1>
+                {cartItems.length > 0 ? cartItems : <h2 className="pizza-wrapper" >Cart is empty</h2>}
             </div>
         );
     }

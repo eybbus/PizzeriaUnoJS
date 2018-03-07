@@ -13,6 +13,7 @@ class Menu extends React.Component {
         
         return (
             <div className="pizza-container">
+                <h1> The Shameless Pizzas </h1>
                 {pizza.map(p => <Pizza key={p.id} pizza={p} />)}
             </div>
         )
