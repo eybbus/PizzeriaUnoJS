@@ -10,6 +10,23 @@ class PizzaDetails extends React.Component {
         getPizza(pizzaId);
     }
 
+    addToCart() {
+        var cart = JSON.parse(localStorage.getItem('cartItems')) || [];
+        console.log(cart);
+
+        var itemToAdd = this.props.pizzaDetail;
+
+        console.log(itemToAdd);
+        
+
+        cart.push(itemToAdd);
+        console.log(cart);
+        localStorage.setItem('cartItems', JSON.stringify(cart));
+        console.log(this.props.pizzaDetail);
+        console.log(Object.keys(localStorage).length);
+        //localStorage.setItem('pizza', JSON.stringify(this.pizzaDetail));
+        console.log(Object.keys(localStorage));
+    }
     
 
     render() {
@@ -24,6 +41,7 @@ class PizzaDetails extends React.Component {
                 <div className="pizza-name">{pizzaDetail.name}</div>
                 <div className="pizza-description">{pizzaDetail.description}</div>
                 <div className="pizza-price">{pizzaDetail.price}</div>
+                <button onClick={()=> this.addToCart()}>Add to cart</button>
             </div>
         )
     }

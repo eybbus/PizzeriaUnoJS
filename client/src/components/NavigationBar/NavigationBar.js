@@ -27,7 +27,7 @@ const NavigationBar = ( ) => {
                     activeClassName="active"
                     className="nav-link">About us</NavLink>
                 <NavLink
-                    to="/cart"
+                    to="/Cart"
                     activeClassName="active"
                     className="nav-link">Cart</NavLink>
             </NavigationBarLinkWrapper>

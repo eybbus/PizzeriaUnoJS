@@ -18,6 +18,7 @@ const Pizza = ({ pizza }) => {
 
 Pizza.propTypes = {
     pizza: PropTypes.shape({
+        id: PropTypes.number,
         name: PropTypes.string,
         description: PropTypes.string,
         price: PropTypes.number,
