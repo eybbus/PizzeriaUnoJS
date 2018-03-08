@@ -35,8 +35,6 @@ class CartList extends React.Component {
         const cartItems = list.map((p, index) => 
             <CartItem key={index} index={index} pizza={p} remove={(id) => this.removeItem(id)} />
         );
-        console.log(this.state);
-        console.log(this.props);
         return (
             <div className="pizza-container">
                 <h1>Your Cart</h1>

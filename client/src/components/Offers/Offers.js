@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import Offer from '../Offer/Offer';
 import { getAllOffers } from '../../actions/offerActions'
 
-class Menu extends React.Component {
+class Offers extends React.Component {
     componentDidMount() {
         const { getAllOffers } = this.props;
         getAllOffers();
@@ -25,5 +25,5 @@ const mapStateToProps = ({ offer }) => {
     return { offer }
 }
 
-export default connect(mapStateToProps, { getAllOffers })(Menu);
+export default connect(mapStateToProps, { getAllOffers })(Offers);
 
