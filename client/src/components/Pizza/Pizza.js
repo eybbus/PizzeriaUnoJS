@@ -17,6 +17,7 @@ const Pizza = ({ pizza }) => {
 };
 
 Pizza.propTypes = {
+    /* Pizza object that contains all information of the pizza to display. */
     pizza: PropTypes.shape({
         id: PropTypes.number,
         name: PropTypes.string,

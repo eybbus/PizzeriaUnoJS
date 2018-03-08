@@ -37,7 +37,7 @@ class DeliveryOptions extends React.Component {
 }
 
 DeliveryOptions.propTypes = {
-    /* closes the popup */
+    /* sends signal to parent to close this component */
     toggle: PropTypes.func.isRequired
 };
 

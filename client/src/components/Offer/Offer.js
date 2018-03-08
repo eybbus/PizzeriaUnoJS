@@ -23,7 +23,8 @@ const Offer = ({ givenOffer }) => {
     }
 };
 
-Offer.propTypes = {
+Offer.propTypes = { 
+    /* offer information, offertext, price and how long it's valid for */
     offers: PropTypes.shape({
         offer: PropTypes.string,
         price: PropTypes.number,

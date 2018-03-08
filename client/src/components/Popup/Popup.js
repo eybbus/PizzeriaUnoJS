@@ -30,7 +30,7 @@ class Popup extends React.Component {
 }
 
 Popup.propTypes = {
-    /* closes the popup */
+    /* sends signal to parent to close this component */
     toggle: PropTypes.func.isRequired
 };
 

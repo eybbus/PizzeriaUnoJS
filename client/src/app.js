@@ -6,7 +6,6 @@ import thunk from 'redux-thunk';
 import reducers from './reducers/reducers';
 import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-//import { PropTypes } from 'prop-types'
 import '../styles/site';
 import NavgationBar from './components/NavigationBar/NavigationBar'
 import Menu from './components/Menu/Menu';

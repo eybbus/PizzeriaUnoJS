@@ -23,6 +23,7 @@ class CartItem extends React.Component {
 };
 
 CartItem.propTypes = {
+    /* Detail information of pizza in cart. */
     pizza: PropTypes.shape({
         id: PropTypes.number,
         name: PropTypes.string,
@@ -30,7 +31,9 @@ CartItem.propTypes = {
         price: PropTypes.number,
         image: PropTypes.string
     }),
+    /* removes pizza from cart. */
     remove: PropTypes.func,
+    /* To send with remove function so we know which pizza we want to remove. */
     index: PropTypes.number
 };
 

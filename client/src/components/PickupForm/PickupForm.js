@@ -74,6 +74,7 @@ class PickupForm extends React.Component {
 };
 
 PickupForm.propTypes = {
+    /* Sends singal to let parent know that the information has been submited. */
     submitForm: PropTypes.func.isRequired
 }
 

@@ -96,7 +96,8 @@ class OrderReview extends React.Component {
     }
 }
 
-PickupForm.propTypes = {
+OrderReview.propTypes = {
+    /* To know how much information of the user should be shown */
     orderKind: PropTypes.string
 }
 
