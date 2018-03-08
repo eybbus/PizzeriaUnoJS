@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { getPizza } from '../../actions/pizzaDetailActions';
 import Popup from '../Popup/Popop';
+import toastr from 'toastr';
 
 class PizzaDetails extends React.Component {
     constructor(props) {
@@ -28,6 +29,7 @@ class PizzaDetails extends React.Component {
         var itemToAdd = this.props.pizzaDetail;
         cart.push(itemToAdd);
         localStorage.setItem('cartItems', JSON.stringify(cart));
+        toastr.success('Pizza added to cart', 'Success!', {timeOut: 1000});
         this.togglePopup();
     }
     

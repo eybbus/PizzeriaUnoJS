@@ -14,6 +14,8 @@ import About from './components/About/About';
 import Offers from './components/Offers/Offers';
 import CartList from './components/CartList/CartList';
 import PizzaDetails from './components/PizzaDetails/PizzaDetails';
+import Checkout from './components/Checkout/Checkout';
+import Confirmation from './components/Confirmation/Confirmation';
 
 
 
@@ -33,9 +35,10 @@ class App extends React.Component {
                             <Route path="/pizzas" component={Menu} />
                             <Route path="/about" component={About} />
                             <Route path="/offers" component={Offers} />
-                            <Route path="/Cart" component={CartList} />
+                            <Route path="/cart/checkout" component={Checkout} />
+                            <Route path="/cart" component={CartList} />
+                            <Route path="/confirmation" component={Confirmation} />
                             <Redirect to="/pizzas" />
-
                         </Switch>
                     </div>
                 </div>

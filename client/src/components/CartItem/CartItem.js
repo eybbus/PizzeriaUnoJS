@@ -12,11 +12,11 @@ class CartItem extends React.Component {
     render() {
         const { name, description, price } = this.props.pizza;
         return (
-            <div className="pizza-wrapper">
+            <div className="pizza-wrapper-cart">
                 <div className="pizza-name">{name}</div>
                 <div className="pizza-description">{description}</div>
                 <div className="pizza-price">{price}</div>
-                <button onClick={() => this.handleClick()}>Remove</button>
+                <button className="remove" onClick={() => this.handleClick()}>&#10006;</button>
             </div>
         );
     }

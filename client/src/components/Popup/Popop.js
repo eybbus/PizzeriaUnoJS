@@ -9,8 +9,13 @@ class Popup extends React.Component {
                     <h1>POPUS</h1>
                     <Link
                         to="/pizzas"
-                        className="nav-link">More Pizzas?</Link>
-                    <button>close me</button>
+                        className="button">More Pizzas?</Link>
+                    <Link
+                        to={{
+                            pathname: '/cart',
+                            state: { checkout: true }
+                        }}
+                        className="button">checkout?</Link>
                 </div>
             </div>
         );
