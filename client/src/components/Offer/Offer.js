@@ -8,7 +8,7 @@ const Offer = ({ givenOffer }) => {
             <div className="offer-wrapper">
                 <div className="offer-offer">{offer}</div>
                 <div className="offer-valid">{validFor}</div>
-                <button>Buy</button>
+                <button className="button">Buy</button>
             </div>
         );
     } else {
@@ -17,7 +17,7 @@ const Offer = ({ givenOffer }) => {
                 <div className="offer-offer">{offer}</div>
                 <div className="offer-price">{price}</div>
                 <div className="offer-valid">{validFor}</div>
-                <button>Buy</button>
+                <button className="button">Buy</button>
             </div>
         );
     }

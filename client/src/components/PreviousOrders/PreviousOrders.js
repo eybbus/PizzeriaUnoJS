@@ -26,17 +26,11 @@ class PreviouseOrders extends React.Component {
         toastr.success('order added to cart', 'Success!', {timeOut: 1000});
         this.props.toggle();
     }
-
     
-    render() {
-        const { order } = this.props;
-        var pizzas;
+    content(order) {
         if(order.length > 0) {
-            
             pizzas = order[order.length-1].map((o, index) =><Pizza key={index} pizza={o} />)
-        }
-        return (
-            <div className='popup'>
+            return(
                 <div className='popup_inner popup_inner-previous'>
                     <span className="close" onClick={() => this.props.toggle()}>&times;</span>
                     <h1>Want to add previous order to cart?</h1>
@@ -45,6 +39,25 @@ class PreviouseOrders extends React.Component {
                         {pizzas}
                     </div>
                 </div>
+            );
+        } else {
+            return (
+                <div className='popup_inner popup_inner-previous'>
+                    <span className="close" onClick={() => this.props.toggle()}>&times;</span>
+                    <h1> There is not record of you ordering from us :( </h1>
+                    <h1> Recommend changing that ;) </h1>
+                    <img src="https://i.imgur.com/isHNXSF.png" alt="oven is dead"/>
+                </div>
+            );
+        }
+    }
+
+    
+    render() {
+        const { order } = this.props;
+        return (
+            <div className='popup'>
+                {this.content(order)}
             </div>
         );
     }

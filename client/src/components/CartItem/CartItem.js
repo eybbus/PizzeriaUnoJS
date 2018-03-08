@@ -5,7 +5,6 @@ import { PropTypes } from 'prop-types';
 class CartItem extends React.Component {
 
     handleClick() {
-        console.log(this.props.index)
         this.props.remove(this.props.index);
     }
 

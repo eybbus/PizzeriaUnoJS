@@ -35,11 +35,9 @@ class DeliveryForm extends React.Component {
         e.preventDefault();
         const { fullName, telephone, address, city, postal } = this.state.fields;
         if (fullName === '' || !validator.isNumeric(telephone) || address === '' || city === '' || postal === '') { return false; }
-        console.log(this.state.fields);
         this.setState(initialState);
         toastr.success('Form was successfully submitted', 'Success!');
         localStorage.setItem('userInfo', JSON.stringify(this.state.fields));
-        console.log(JSON.parse(localStorage.getItem('userInfo')));
         this.props.submitForm();
         
     }

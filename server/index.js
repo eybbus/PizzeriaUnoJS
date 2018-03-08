@@ -42,16 +42,13 @@ router.get('/offers/:offerId', (req, res) => {
 });
 
 router.get('/orders/:telephone', (req, res) => {
-    const { telephone } = req.params;
-    console.log('fuuuck');
-    
+    const { telephone } = req.params;  
     return orders.hasOwnProperty(telephone) ? res.json(orders[telephone]) : res.status(404).send(`No orders are found for ${telephone}`);
 });
 
 router.post('/orders/:telephone', (req, res) => {
     const { telephone } = req.params;
     const order = new Order(req.body);
-    console.log(order);
     orders.hasOwnProperty(telephone) ? orders[telephone].push(order) : orders[telephone] = [order];
     return res.send(`Order for ${telephone} was successfully issued!`);
 });
