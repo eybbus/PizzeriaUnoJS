@@ -58,7 +58,7 @@ class OrderReview extends React.Component {
                         </ul>
                     </div>
                     <h3>total Price</h3>
-                    <p>{totalPrice}</p>
+                    <p>{totalPrice} ISK</p>
                     <button className="button" onClick={() => this.submitOrder()}>Confirm Order</button>
                 </div>
             );
@@ -79,7 +79,7 @@ class OrderReview extends React.Component {
                         </ul>
                     </div>
                     <h3>total Price</h3>
-                    <p>{totalPrice}</p>
+                    <p>{totalPrice} ISK</p>
                     {/*<Link to="/confirmation" onClick={() => this.submitOrder()}>Confirm Order</Link>*/}
                     <button className="button" onClick={() => this.submitOrder()}>Confirm Order</button>
                 </div>

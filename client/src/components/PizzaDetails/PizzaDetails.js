@@ -46,7 +46,7 @@ class PizzaDetails extends React.Component {
                 </div>
                 <div className="pizza-name">{pizzaDetail.name}</div>
                 <div className="pizza-description">{pizzaDetail.description}</div>
-                <div className="pizza-price">{pizzaDetail.price}</div>
+                <div className="pizza-price">{pizzaDetail.price} ISK</div>
                 <button onClick={()=> this.addToCart()}>Add to cart</button>
                 {this.state.showPopup ? <Popup toggle={() => this.togglePopup()}/> : null}
             </div>

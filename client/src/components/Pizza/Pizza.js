@@ -10,7 +10,7 @@ const Pizza = ({ pizza }) => {
             <Link className="pizza-link" to={`/pizzas/${id}`}>
                 <div className="pizza-name">{name}</div>
                 <div className="pizza-description">{description}</div>
-                <div className="pizza-price">{price}</div>
+                <div className="pizza-price">{price} ISK</div>
             </Link>
         </div>
     );

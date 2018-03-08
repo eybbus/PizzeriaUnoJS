@@ -15,7 +15,7 @@ const Offer = ({ givenOffer }) => {
         return (
             <div className="offer-wrapper">
                 <div className="offer-offer">{offer}</div>
-                <div className="offer-price">{price}</div>
+                <div className="offer-price">{price} ISK</div>
                 <div className="offer-valid">{validFor}</div>
                 <button className="button">Buy</button>
             </div>

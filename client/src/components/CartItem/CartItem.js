@@ -14,7 +14,7 @@ class CartItem extends React.Component {
             <div className="pizza-wrapper-cart">
                 <div className="pizza-name">{name}</div>
                 <div className="pizza-description">{description}</div>
-                <div className="pizza-price">{price}</div>
+                <div className="pizza-price">{price} ISK</div>
                 <button className="remove" onClick={() => this.handleClick()}>&#10006;</button>
             </div>
         );
