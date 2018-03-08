@@ -1,7 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { getPizza } from '../../actions/pizzaDetailActions';
-import Popup from '../Popup/Popop';
+
+import Popup from '../Popup/Popup';
 import toastr from 'toastr';
 
 class PizzaDetails extends React.Component {
@@ -47,7 +48,7 @@ class PizzaDetails extends React.Component {
                 <div className="pizza-description">{pizzaDetail.description}</div>
                 <div className="pizza-price">{pizzaDetail.price}</div>
                 <button onClick={()=> this.addToCart()}>Add to cart</button>
-                {this.state.showPopup ? <Popup /> : null}
+                {this.state.showPopup ? <Popup toggle={() => this.togglePopup()}/> : null}
             </div>
         )
     }

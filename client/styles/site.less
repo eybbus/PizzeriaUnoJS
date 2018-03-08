@@ -72,6 +72,7 @@ li:last-child {
     font-weight: bold;
 }
 
+
 .popup {
     position: fixed;
     width: 100%;
@@ -101,6 +102,10 @@ li:last-child {
     a {
         margin: 20px;
     }
+}
+
+.popup_inner-previous {
+    height: 400px;
 }
 
 .close {
@@ -239,6 +244,11 @@ body {
             flex-wrap: wrap;
             width: 100%;
             margin: 0 auto;
+            justify-content: space-between;
+        }
+        .previous {
+            overflow: auto;
+            height: 67%;
         }
 
         .pizza-wrapper {
@@ -248,7 +258,6 @@ body {
             padding: 20px;
             border: 2px solid transparent;
             width: 100%;
-            
         }
         .pizza-wrapper-cart {
             width: 100%;

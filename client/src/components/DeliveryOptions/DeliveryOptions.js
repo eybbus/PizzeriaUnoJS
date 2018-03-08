@@ -1,7 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { PropTypes } from 'prop-types';
 
 class DeliveryOptions extends React.Component {
+    constructor(props) {
+        super(props);
+        
+    }
+    
     render() {
         return (
             <div className='popup'>
@@ -29,5 +35,10 @@ class DeliveryOptions extends React.Component {
         );
     }
 }
+
+DeliveryOptions.propTypes = {
+    /* closes the popup */
+    toggle: PropTypes.func.isRequired
+};
 
 export default DeliveryOptions;

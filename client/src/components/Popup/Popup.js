@@ -1,11 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { PropTypes } from 'prop-types';
 
 class Popup extends React.Component {
+    constructor(props) {
+        super(props);
+        
+    }
+
+    setCheckout() {
+        
+    }
     render() {
         return (
             <div className='popup'>
                 <div className='popup_inner'>
+                    <span className="close" onClick={() => this.props.toggle()}>&times;</span>
                     <h1>POPUS</h1>
                     <Link
                         to="/pizzas"
@@ -21,5 +31,10 @@ class Popup extends React.Component {
         );
     }
 }
+
+Popup.propTypes = {
+    /* closes the popup */
+    toggle: PropTypes.func.isRequired
+};
 
 export default Popup;

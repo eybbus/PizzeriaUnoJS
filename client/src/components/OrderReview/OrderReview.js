@@ -2,7 +2,7 @@ import React from 'react';
 //import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
-import { setOrder, getOrder } from '../../actions/orderActions';
+import { setOrder } from '../../actions/orderActions';
 
 class OrderReview extends React.Component {
     constructor(props) {
@@ -18,13 +18,9 @@ class OrderReview extends React.Component {
     }
 
     submitOrder() {
-        console.log(this.state.userList.telephone);
-        console.log(this.props);
-        const { setOrder, getOrder } = this.props;
-
-        console.log(JSON.parse(localStorage.getItem('cartItems')));
+        const { setOrder } = this.props;
         setOrder(this.state.userList.telephone, JSON.parse(localStorage.getItem('cartItems')));
-        getOrder(this.state.userList.telephone);
+        localStorage.removeItem('cartItems');
         this.setState({ confirmation: true });
     }
     
@@ -101,4 +97,4 @@ class OrderReview extends React.Component {
 }
 
 
-export default connect(null, { setOrder, getOrder })(OrderReview);
+export default connect(null, { setOrder })(OrderReview);

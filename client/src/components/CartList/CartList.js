@@ -41,7 +41,7 @@ class CartList extends React.Component {
             <div className="pizza-container">
                 <h1>Your Cart</h1>
                 {cartItems.length > 0 ? cartItems : <h2 className="pizza-wrapper" >Cart is empty</h2>}
-                {cartItems.length > 0 ? <button onClick={() => this.togglePopup()}>Procced to checkout</button> : null}
+                {cartItems.length > 0 ? <button className="button" onClick={() => this.togglePopup()}>Procced to checkout</button> : null}
                 {this.state.showDeliveryOptions ? <DeliveryOptions toggle={() => this.togglePopup()} /> : null}
             </div>
         );

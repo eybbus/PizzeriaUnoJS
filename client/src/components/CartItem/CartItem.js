@@ -30,7 +30,7 @@ CartItem.propTypes = {
         price: PropTypes.number,
         image: PropTypes.string
     }),
-    remove: PropTypes.func.isRequired,
+    remove: PropTypes.func,
     index: PropTypes.number
 };
 
