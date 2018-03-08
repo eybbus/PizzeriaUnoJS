@@ -2,6 +2,7 @@ import React from 'react';
 import TextInput from '../TextInput/TextInput';
 import toastr from 'toastr';
 import validator  from 'validator';
+import { PropTypes } from 'prop-types';
 
 const initialState = {
     fields: {
@@ -34,7 +35,7 @@ class PickupForm extends React.Component {
         this.setState(initialState);
         toastr.success('Form was successfully submitted', 'Success!');
         localStorage.setItem('userInfo', JSON.stringify(this.state.fields));
-        this.props.temp();
+        this.props.submitForm();
     }
 
     validTelephone(val) {
@@ -71,5 +72,9 @@ class PickupForm extends React.Component {
         )
     };
 };
+
+PickupForm.propTypes = {
+    submitForm: PropTypes.func.isRequired
+}
 
 export default PickupForm;

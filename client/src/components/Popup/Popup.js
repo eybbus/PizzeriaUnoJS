@@ -8,9 +8,6 @@ class Popup extends React.Component {
         
     }
 
-    setCheckout() {
-        
-    }
     render() {
         return (
             <div className='popup'>

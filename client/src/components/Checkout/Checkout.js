@@ -13,7 +13,7 @@ class Checkout extends React.Component {
         }
     }
 
-    temp() {
+    formComplete() {
         this.setState({ userInfoExists: true })
     }
     
@@ -28,13 +28,13 @@ class Checkout extends React.Component {
         } else if (this.state.orderKind == 'delivery') {
             return (
                 <div>
-                    <DeliveryForm  temp={() => this.temp()} />
+                    <DeliveryForm submitForm={() => this.formComplete()} />
                 </div>
             );
         } else if (this.state.orderKind == 'pickup') {
             return (
                 <div>
-                    <PickupForm temp={() => this.temp()} />
+                    <PickupForm submitForm={() => this.formComplete()} />
                 </div>
             );
         }

@@ -15,7 +15,7 @@ class PizzaDetails extends React.Component {
     componentDidMount() {
         // Dispatch action from Redux
         const { getPizza } = this.props;
-        const { pizzaId } = this.props.match.params;+
+        const { pizzaId } = this.props.match.params;
         getPizza(pizzaId);
     }
 

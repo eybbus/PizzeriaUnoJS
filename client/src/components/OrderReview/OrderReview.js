@@ -1,8 +1,8 @@
 import React from 'react';
-//import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
 import { setOrder } from '../../actions/orderActions';
+import { PropTypes } from 'prop-types';
 
 class OrderReview extends React.Component {
     constructor(props) {
@@ -96,5 +96,8 @@ class OrderReview extends React.Component {
     }
 }
 
+PickupForm.propTypes = {
+    orderKind: PropTypes.string
+}
 
 export default connect(null, { setOrder })(OrderReview);

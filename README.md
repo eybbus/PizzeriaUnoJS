@@ -25,7 +25,7 @@ Your job is to create a React application for a new pizza restaurant called Pizz
 
     * - [x] Cart
 
-* - [ ] (25%) A user needs to go through the following steps when buying a pizza:
+* - [X] (25%) A user needs to go through the following steps when buying a pizza:
     1. - [x] Selects a pizza/s from menu or select previous order which can be retrieved at(http://localhost:3500/orders/:telephone)
     1. - [x] When selection is finished, he gets an option to go to checkout. The checkout should also be available in the cart
     1. - [x] In the first step of checkout the user needs to decide if he wants to pickup the pizza or have it delivered

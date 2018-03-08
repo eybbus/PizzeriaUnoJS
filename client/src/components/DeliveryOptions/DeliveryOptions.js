@@ -16,7 +16,7 @@ class DeliveryOptions extends React.Component {
                     <h1>Do you want to pick up your pizza yourselft or be shameless and get it delivered?</h1>
                     <Link
                         to={{
-                            pathname: '/Cart/Checkout',
+                            pathname: '/cart/checkout',
                             state: { linkState: 'pickup' }
                         }}
                         className="button"> 
@@ -24,7 +24,7 @@ class DeliveryOptions extends React.Component {
                     </Link>
                     <Link
                         to={{
-                            pathname: '/Cart/Checkout',
+                            pathname: '/cart/checkout',
                             state: { linkState: 'delivery' }
                         }}
                         className="button"> 

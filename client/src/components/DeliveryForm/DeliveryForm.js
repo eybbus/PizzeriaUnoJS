@@ -3,6 +3,8 @@ import TextInput from '../TextInput/TextInput';
 import toastr from 'toastr';
 import validator  from 'validator';
 
+import { PropTypes } from 'prop-types';
+
 const initialState = {
     fields: {
         fullName: '',
@@ -38,7 +40,7 @@ class DeliveryForm extends React.Component {
         toastr.success('Form was successfully submitted', 'Success!');
         localStorage.setItem('userInfo', JSON.stringify(this.state.fields));
         console.log(JSON.parse(localStorage.getItem('userInfo')));
-        this.props.temp();
+        this.props.submitForm();
         
     }
 
@@ -94,5 +96,9 @@ class DeliveryForm extends React.Component {
         )
     };
 };
+
+DeliveryForm.propTypes = {
+    submitForm: PropTypes.func.isRequired
+}
 
 export default DeliveryForm;
